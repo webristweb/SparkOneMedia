@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SparkOne Media</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h3>Loading...</h3>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="navbar-brand">
+    <img src="sparkOneMedia.png"  style="height:85px;">
+  </a>
+
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#platforms">Platforms</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="header" id="home">
+        <div class="header-content">
+            <h3>SPARKONE MEDIA</h3>
+            <h1>All Social Media & Youtube CMS & Music Distribution</h1>
+            <p>SparkOne Media is a stop solution for all Needs. From All Social Media & Youtube Channel Management through CMS to Music Distribution worldwide. We cover everything</p>
+            <div class="header-buttons">
+
+                <button class="btn" onclick="scrollToContact()">
+                    <i class="fas fa-phone"></i> Call Us
+                </button>
+
+                
+               
+
+ <button class="btn btn-outline" onclick="window.open('https://aboutsection123.blogspot.com/', '_blank')">
+    <i class="fas fa-info-circle"></i> About
+</button>
+
+                <!-- Existing Learn More Button -->
+               
+               
+                
+               
+                 <button class="btn btn-outline" onclick="window.open('https://sparkonemedia1.blogspot.com/', '_blank')">
+    <i class="fas fa-info-circle"></i> Learn More
+</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Platforms Section -->
+    <div class="container fade-in" id="platforms" data-aos="fade-up">
+        <h2><i class="fas fa-music"></i> GET YOUR MUSIC ON</h2>
+        <div class="platform-list">
+            <div class="platform-item">
+                <i class="fab fa-spotify"></i>
+                <h4>Spotify</h4>
+            </div>
+            <div class="platform-item">
+                <i class="fas fa-music"></i>
+                <h4>Music</h4>
+            </div>
+            <div class="platform-item">
+                <i class="fab fa-amazon"></i>
+                <h4>Amazon Music</h4>
+            </div>
+            <div class="platform-item">
+                <i class="fas fa-headphones"></i>
+                <h4>Deezer</h4>
+            </div>
+            <div class="platform-item">
+                <i class="fab fa-youtube"></i>
+                <h4>VEVO</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container fade-in" id="services" data-aos="fade-up">
+        <h2><i class="fas fa-star"></i> Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-users"></i>
+                <h3>Artist Management</h3>
+                <p>Professional management services for artists of all genres</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-broadcast-tower"></i>
+                <h3>CMS & Distribution</h3>
+                <p>Complete content management and distribution solutions</p>
+            </div>
+
+             <div class="service-card">
+                <i class="fas fa-usersr"></i>
+                <h3>Creators Management</h3>
+                <p>Supporting creators with strategy, structure & Scale</p>
+            </div>
+              
+            <div class="service-card">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Round-the-clock support for all your needs</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="team-container">
+    <div class="card">
+      <h2>Ujjwal Kumar</h2>
+      <p>DESIGNER $ DEVLOPER</p>
+    </div>
+    <div class="card">
+      <h2>Prince $ Vishal</h2>
+      <p>CEO & ESTABLISHER</p>
+    </div>
+
+
+
+    <div class="illustration">
+      <img src="https://i.ibb.co/S4vx16dh/IMG-20250616-WA0007.jpg" alt="illustration">
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Clients Section -->
+    <div class="container fade-in clients-section" id="clients" data-aos="fade-up">
+        <div class="clients-header">
+            <h2><i class="fas fa-users"></i> OUR ESTEEMED CLIENTS</h2>
+            <p>Discover our diverse portfolio of talented artists and content creators who trust us with their success</p>
+        </div>
+        
+        <div class="clients-filter">
+            <button class="filter-btn active" onclick="filterClients('all')">
+                <span>All Clients</span>
+            </button>
+            <button class="filter-btn" onclick="filterClients('artists')">
+                <span>Artists</span>
+            </button>
+            <button class="filter-btn" onclick="filterClients('bhojpuri')">
+                <span>Bhojpuri</span>
+            </button>
+            <button class="filter-btn" onclick="filterClients('devotional')">
+                <span>Devotional</span>
+            </button>
+            <button class="filter-btn" onclick="filterClients('haryanvi')">
+                <span>Haryanvi</span>
+            </button>
+            <button class="filter-btn" onclick="filterClients('punjabi')">
+                <span>Punjabi</span>
+            </button>
+        </div>
+
+        <div class="clients-grid">
+            <div class="client-card" data-category="artists">
+                <div class="client-logo">
+                    <i class="fas fa-user-circle fa-4x"></i>
+                </div>
+                <div class="client-info">
+                    <h4>Shiv Kumar Bikku</h4>
+                    <p>Music Artist</p>
+                    <div class="client-stats">
+                        <div class="stat-item">
+                            <h5>1M+</h5>
+                            <p>Views</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>50+</h5>
+                            <p>Songs</p>
+                        </div>
+                    </div>
+                    <div class="client-achievements">
+                        <i class="fas fa-trophy"></i> Top Artist 2023
+                    </div>
+                    <div class="client-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <span class="client-category">Artist</span>
+            </div>
+
+            <div class="client-card" data-category="bhojpuri">
+                <div class="client-logo">
+                    <i class="fas fa-music fa-4x"></i>
+                </div>
+                <div class="client-info">
+                    <h4>Roshan Rohi</h4>
+                    <p>Bhojpuri Artist</p>
+                    <div class="client-stats">
+                        <div class="stat-item">
+                            <h5>2M+</h5>
+                            <p>Views</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>100+</h5>
+                            <p>Songs</p>
+                        </div>
+                    </div>
+                    <div class="client-achievements">
+                        <i class="fas fa-award"></i> Best Bhojpuri Artist 2023
+                    </div>
+                    <div class="client-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <span class="client-category">Bhojpuri</span>
+            </div>
+
+            <div class="client-card" data-category="punjabi">
+                <div class="client-logo">
+                    <i class="fas fa-headphones fa-4x"></i>
+                </div>
+                <div class="client-info">
+                    <h4>AIM Punjabi</h4>
+                    <p>Music Channel</p>
+                    <div class="client-stats">
+                        <div class="stat-item">
+                            <h5>5M+</h5>
+                            <p>Subscribers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>200+</h5>
+                            <p>Videos</p>
+                        </div>
+                    </div>
+                    <div class="client-achievements">
+                        <i class="fas fa-star"></i> Gold Play Button
+                    </div>
+                    <div class="client-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <span class="client-category">Punjabi</span>
+            </div>
+
+            <div class="client-card" data-category="devotional">
+                <div class="client-logo">
+                    <i class="fas fa-om fa-4x"></i>
+                </div>
+                <div class="client-info">
+                    <h4>Aradhana Bhakti Vadana</h4>
+                    <p>Devotional Channel</p>
+                    <div class="client-stats">
+                        <div class="stat-item">
+                            <h5>3M+</h5>
+                            <p>Subscribers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h5>150+</h5>
+                            <p>Videos</p>
+                        </div>
+                    </div>
+                    <div class="client-achievements">
+                        <i class="fas fa-medal"></i> Top Devotional Channel
+                    </div>
+                    <div class="client-social">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <span class="client-category">Devotional</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container fade-in" id="contact" data-aos="fade-up">
+        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>8969721154 / 9709851977</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>mediasparkone@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+    <footer>
+
+<div class="footer-logo">
+        <img src="https://i.ibb.co/6VbVMkP/1000226902-removebg-preview.png" alt="SparkOne Media Logo">
+    </div>
+    <div class="footer-content">
+        <div class="footer-section">
+
+
+
+    <!--<div class="footer-content">
+        <div class="footer-section">-->
+
+            <h3>SPARKONE MEDIA</h3>
+            <p>Your one-stop solution for all media needs</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/1AdoHN2HZ8/"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/SparkoneM20299?t=l-EA9b7Vc8Tr1zt6JTdkhg&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/sparkone.media0?igsh=MWhoZng1bnM3bDk3aA=="><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/sparkone-media-a2b826370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#platforms"><i class="fas fa-tv"></i> Platforms</a></li>
+                <li><a href="#clients"><i class="fas fa-users"></i> Clients</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-phone"></i> 8969721154  /  9709851977   </p>
+            <p><i class="fas fa-envelope"></i> mediasparkone@gmail.com</p>
+            <div class="footer-newsletter">
+                <input type="email" placeholder="mediasparkone@gmail.com">
+                <button>Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p> &copy; <center> © 2025 sparkone media | Design & Developed by <a href="#">Sparkone Media</a> </center>  </p>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="script.js"></script>   
+</body>
+</html>
